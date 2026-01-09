@@ -72,7 +72,7 @@ jobs:
           go version
 
       - name: Run Unit Tests
-        run: go test -v -coverprofile=coverage.txt -covermode=atomic --race ./...
+        run: make test
 
   build:
     name: Go Build
